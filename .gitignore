@@ -1,0 +1,19 @@
+# API anahtarı burada — ASLA git'e gönderilmemeli
+.env
+
+# Python'un ürettiği geçici dosyalar
+__pycache__/
+*.py[cod]
+
+# Sanal ortam
+venv/
+.venv/
+
+# Editör ayarları
+.vscode/
+.idea/
+
+# SQLite veritabanı dosyaları (kullanıcı verisi içerir, git'e girmemeli)
+*.db
+*.db-journal
+*.sqlite3

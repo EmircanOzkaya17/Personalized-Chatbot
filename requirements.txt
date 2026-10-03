@@ -1,0 +1,14 @@
+# Google Gemini resmi Python SDK'sı ("Google Gen AI SDK").
+# Üst sınır bilerek konuldu: 3.0 sürümünde geriye dönük uyumsuz değişiklikler
+# planlanıyor, kurulumun bir gün kendiliğinden bozulmasın.
+# NOT: Eski "google-generativeai" paketi ARTIK KULLANILMIYOR; internetteki
+# genai.configure(...) / genai.GenerativeModel(...) örnekleri o eski pakete ait.
+google-genai>=2.0.0,<3.0.0
+
+# llm_client.py httpx'i DOĞRUDAN import ediyor (ağ hatalarını yakalamak için).
+# google-genai zaten kuruyor, ama doğrudan kullandığımız paketi kendimiz de
+# listeliyoruz. Sürümü google-genai belirlesin diye sabitlemiyoruz.
+httpx
+
+python-dotenv==1.2.2
+streamlit==1.41.1
